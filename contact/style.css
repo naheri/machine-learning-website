@@ -1,0 +1,257 @@
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #3f3f45;
+    color: #f1f1f1;
+  }
+  .collapsible:after {
+    color: rgb(57, 56, 56);
+  }
+  a {
+    color:#f1f1f1
+  }
+  img {
+    filter: grayscale(20%);
+  }
+  .content{
+    background-color: #3f3f45;
+  }
+}
+@media (prefers-color-scheme: light) {
+  body{
+    background-color: #fbf2ff;
+  }
+  a {
+  color: #3f3f45;
+  }
+  img {
+  filter: grayscale(20%);
+  }
+  }
+* {
+	box-sizing: border-box;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Rubik Distressed', cursive;
+}
+body {
+	scroll-behavior: smooth;
+  height: fit-content;
+}
+
+a{
+  transition: 0.3s;
+  text-decoration: none;
+  font-weight: 500;
+}
+a:visited{
+  text-decoration: none;
+}
+li{
+  transition: all 0.3s;
+}
+li:hover{
+  transform: scale(1.1);
+}
+.navbar{
+  position: fixed;
+  top: 45px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  box-sizing: border-box;
+  transform: translateY(-3rem);
+  z-index: 1;
+  margin-bottom: 25px;
+}
+.navbar .nav-links ul{
+  display: flex;
+}
+.navbar .nav-links ul li{
+  margin: 0 25px;  
+}
+.navbar .nav-links ul li a{
+  font-weight: 700;
+}
+.navbar .menu-hamburger{
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 35px;
+}
+
+/* responsive pour mobile*/
+@media screen and (max-width:900px){
+  .nav-links.mobile-menu{
+    margin-left: 0;
+  }
+  .navbar{
+    padding: 0;
+  }
+  .navbar #logo-image{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+  }
+  /*changement de propriétés de la navbar*/
+  .nav-links{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+    backdrop-filter: blur(8px);
+    transition: all 0.5s ease;
+  }
+  .nav-links ul{
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar .nav-links ul li{
+    margin: 25px 0;
+    font-size: 1.5em;  
+  }
+  .navbar .nav-links ul li a{
+    font-weight: 700;
+    color: darkorchid;
+  }
+  .navbar .menu-hamburger{
+    display: block;
+  }
+}
+.images{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.images img{
+  width: 120px;
+  margin: 20px 25px;
+}
+.images a{
+  width: fit-content;
+}
+#FAQ{
+  width: 500px;
+}
+.collapsible {
+  color: rgb(5, 4, 4);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+.image-slider{
+  display: flex;
+  flex-direction: column;
+  transform: translateX(63rem)translateY(-33rem);
+  align-items: center;
+  z-index: 0;
+  position: absolute;
+}
+
+@keyframes fade{
+  from{
+    opacity:0.4;
+  }
+  to{
+    opacity:1;
+  }
+}
+
+#slider{
+  margin:0 auto;
+  width:300px;
+  height:400px;
+  overflow:hidden;
+}
+.slides{
+  overflow:hidden;
+  animation-name:fade;
+  animation-duration:1s;
+  display:none;
+}
+.slides img{
+  border-radius: 18px;
+}
+#dot{
+  margin:0 auto;
+  text-align:center;
+}
+.dot{
+  display:inline-block;
+  border-radius:50%;
+  background:#d3d3d3;
+  padding:8px;
+  margin:10px 5px;
+}
+@media (max-width:567px){
+  #slider{
+    width:100%;
+  }
+}
+.collapsible:after {
+  content: '\002B';
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2212";
+}
+.content{
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 600px;
+    justify-content: space-evenly;
+    margin: 45vh 0vh 2vh 26vh;
+}
+.box{
+    width: 700px;
+    height: 500px;
+    margin: 30px;
+}
+.question{
+  border-top: 1px solid;
+}
+#FAQ.box:last-child{
+  border-bottom: 1px solid;
+}
+
+.logo{
+    width: fit-content;
+}
+.logos{
+  width: 100px;
+}
+
+button{
+	background: transparent;
+    border: none !important;
+    font-size:0;
+}
+#menu-icon-image {
+    width: 50px;
+}
+#logo-image{
+  width: 82px;
+  margin: 24px
+}

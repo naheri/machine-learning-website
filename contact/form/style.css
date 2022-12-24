@@ -1,0 +1,226 @@
+
+* {
+	box-sizing: border-box;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Rubik Distressed', cursive;
+}
+#title{
+  margin-top: 110px;
+}
+a{
+  transition: 0.3s;
+  text-decoration: none;
+  font-weight: 500;
+  color: #232323;
+  display: contents;
+}
+a:visited{
+  text-decoration: none;
+}
+li{
+  transition: all 0.3s;
+}
+li:hover{
+  transform: scale(1.1);
+  color: #232323;
+}
+.navbar{
+  position: fixed;
+  top: 45px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  transform: translateY(-3rem);
+  z-index: 1;
+  margin-bottom: 25px;
+}
+
+.navbar .nav-links ul{
+  display: flex;
+}
+.navbar .nav-links ul li{
+  margin: 0 25px;  
+}
+.navbar .nav-links ul li a{
+  font-weight: 700;
+}
+
+.navbar .menu-hamburger{
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 35px;
+}
+
+/* responsive pour mobile*/
+@media screen and (max-width:900px){
+  .nav-links.mobile-menu{
+    margin-left: 0;
+  }
+  .navbar{
+    padding: 0;
+  }
+  .navbar #logo-image{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+
+  }
+  /*changement de propriétés de la navbar*/
+  .nav-links{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+    backdrop-filter: blur(8px);
+    transition: all 0.5s ease;
+  }
+  .nav-links ul{
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar .nav-links ul li{
+    margin: 25px 0;
+    font-size: 1.5em;  
+  }
+  .navbar .nav-links ul li a{
+    font-weight: 700;
+    color: darkorchid;
+  }
+  .navbar .menu-hamburger{
+    display: block;
+  }
+}
+body{
+    background: rgb(34,195,167);
+    background: linear-gradient(28deg, rgba(34,195,167,1) 0%, rgba(51,144,196,1) 50%, rgba(85,45,253,1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height:100%;
+    background-position: center center;
+    text-align:center;
+    margin:auto;
+    padding:0;
+    font-family: 'Rubik Distressed', cursive;
+    overflow-x: hidden;
+}
+button{
+	background: transparent;
+    border: none !important;
+    font-size:0;
+}
+
+#menu-icon-image {
+    width: 50px;
+}
+#logo-image{
+	width: 60px;
+  margin: 11px;
+	
+}
+.checkbox-container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "art médecine cinéma travaux"
+      "sport conduite éducation cuisine";
+    
+  }
+  
+  .art {grid-area: art;}
+  .médecine {grid-area: médecine;}
+  .cinéma { grid-area: cinéma; }
+  .travaux{ grid-area: travaux; }
+  .sport { grid-area: sport; }
+  .conduite { grid-area: conduite; }
+  .éducation { grid-area: éducation; }
+  .cuisine { grid-area: cuisine; }
+  
+.container {
+    width: 100%;
+    height: 1000px;
+    margin: 3.125rem auto 0 auto;
+}
+@media(min-width: 768px){
+    .container{
+        max-width: 720px;
+    }
+}
+#survey-form{
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 20px;
+
+}
+.form-group{
+    margin-top: 10px;
+}
+#name-label{
+    display: flex;
+    color: aliceblue;
+    width: 100%;
+    
+}
+#email-label{
+    display: flex;
+    color: aliceblue;
+}
+#age-label{
+    display: flex;
+    color: aliceblue;
+}
+
+.label-gender-group{
+    display: flex;
+    align-self: flex-start;
+}
+p{
+    display: flex;
+    color: aliceblue;
+    margin-bottom: 0px;
+}
+label{
+    display: flex;
+    margin-bottom: 1vh;
+}
+#iPhone{
+    display: flex;
+    color: aliceblue;
+}
+.form-control{
+    width: 100%;
+}
+footer{
+  text-align: initial;
+  margin-left: 1rem;
+}
+#textarea{
+  font-family: system-ui, -apple-system, "system-ui", ".SFNSText-Regular", sans-serif;
+  width: 100%;
+  height: 140px;
+  display: flex;
+}
+/* BOUTON submit_button*/
+.submit-button{
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}

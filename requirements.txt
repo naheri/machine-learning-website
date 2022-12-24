@@ -1,0 +1,7 @@
+flask==2.2.2
+tensorflow
+numpy
+opencv-python
+keras
+deepl
+openai

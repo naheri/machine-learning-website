@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../algorithmes/style.css">
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/d/d5/Hey_Machine_Learning_Logo.png" type="image/x-icon">
+    <title>algorithmes</title>
+</head>
+<body>
+    
+<section id="section0">
+    <nav class="navbar">
+        <a href="http://localhost:8889/projet20212363/start/index.html">
+            <img id=logo-image src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Hey_Machine_Learning_Logo.png" alt="logo">
+        </a>
+        <div class="nav-links"> 
+            <ul>
+                <li><a href="http://localhost:8889/projet20212363/start/index.html">acceuil</a></li>
+                <li><a href="http://localhost:8889/projet20212363/histoire/index.html">histoire</a></li>
+                <li><a href="http://localhost:8889/projet20212363/algorithmes/index.html">algorithmes</a></li>
+                <li><a href="http://127.0.0.1:5000/">applications</a></li>
+                <li><a href="http://localhost:8889/projet20212363/contact/index.html">contact</a></li>
+            </ul>
+        </div>
+        <img class="menu-hamburger" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png" alt="icône menu hamburger">
+        </nav>
+    <div id="titre">
+	    <h1>Algorithmes</h1>
+        <div class="bounce" id="conseil">
+            <p>Déplacez le où vous voulez</p>
+            <img src="https://cdn-icons-png.flaticon.com/512/76/76338.png" alt="fleche" id="fleche">
+       </div>
+    </div>
+    <div id="wrapper">
+        <h3 id="wrappertext">EXPLORER!</h3>
+        
+            <button onclick="tongueSound();location.href='http://localhost:8889/projet20212363/algorithmes/index.html#section1'">
+                <div class="arrow bounce"></div> 
+            </button>
+       
+        
+    </div>
+  </section>
+<section id="section1">
+<h2>algorithme ?</h2>
+<div class="flex-container">
+    <div class="text">
+        <p>Selon le <a href="https://www.cnil.fr/professionnel" target="_blank">CNIL</a>, un algorithme est la description d'une suite
+            d'étapes permettant d'obtenir un résultat à partir d'éléments fournis en 
+            entrée. Par exemple, une recette de cuisine est un algorithme permettant 
+            d'obtenir un plat à partir de ses ingrédients!</p>
+    </div>
+    <div id="image">
+        <img src="https://i.imgur.com/BS38gMt.gif" id="algorithme-image" alt="algorithme-animé">
+        <p>visualisation d'un algorithme "chercheur de chemin"</p>
+    </div>
+</div>
+</section>
+<section id="section2">
+    <div class="flex-container">
+        <p class="text">Pour résumer, les algorithmes de Machine Learning apprennent 
+        de manière autonome à effectuer une tâche ou à réaliser des prédictions à partir
+        de données et améliorent leurs performances au fil du temps. Une fois entraîné,
+        l'algorithme pourra retrouver les patterns dans de nouvelles données.</p>
+      <img src="https://cdn.ttgtmedia.com/rms/onlineImages/crm-turing_test.jpg" alt="turingtest-image">
+    </div>
+</section>
+<section id="section3">
+    <div class="flex-container">
+        <p>Il existe quatres principales catégories d'algorithmes de 
+        Machine Learning. (Apprentissage supervisé, non-supervisé, semi-supervisé et 
+        par renforcement). Les algorithmes dits "d'apprentissage supervisé". L'apprentissage 
+        supervisé est consiste à apprendre une 
+        fonction de prédiction à partir d'exemples annotés.
+        </p>
+        <img src="https://miro.medium.com/max/1400/1*ZCeOEBhvEVLmwCh7vr2RVA.png" alt="schéma-catégories">
+    </div>
+  
+</section>
+<section id="section4">
+    <h2>Apprentissage supervisé</h2>
+    <div class="flex-container">
+        <p>Les algorithmes d'apprentissage supervisé tentent de modéliser
+        les relations et les dépendances entre la sortie de prédiction cible et les 
+        caractéristiques d'entrée, de sorte que nous puissions prédire les valeurs de 
+        sortie pour les nouvelles données sur la base de ces relations apprises à partir
+        des ensembles de données précédents.</p>
+        <img src="https://www.tibco.com/sites/tibco/files/media_entity/2020-09/supervised-learning-diagram.svg" alt="diagramme-apprentissage supervisé">
+    </div>
+  
+</section>
+<section id="section5">
+    <h2>Apprentissage non-supervisé</h2>
+    <div class="flex-container">
+        <p class="text">L'apprentissage non supervisé utilise des algorithmes pour 
+            analyser et regrouper des ensembles de données non étiquetées. 
+            Ces algorithmes découvrent des modèles cachés ou des regroupements 
+            de données sans nécessiter d'intervention humaine. Sa capacité à découvrir 
+            les similitudes et les différences entre les informations en fait la solution
+            idéale pour de l'analyse de données ou la reconnaissance d'images.
+        </p>
+        <iframe src="https://www.youtube.com/embed/Mx9f99bRB3Q?autoplay=1mute=0&controls=0"></iframe>
+    </div>
+    
+</section>
+<section id="section6">
+    <h2>Apprentissage semi-supervisé</h2>
+    <div class="flex-container">
+        <p>L'apprentissage semi-supervisé implique un petit nombre de données catégorisée et un grand nombre de données non catégorisées.
+        Les problèmes de ce type sont difficiles car ni l'apprentissage supervisé ni l'apprentissage non supervisé n'est capable d'utiliser efficacement les mélanges de données étiquetées et non étiquetées. C'est pourquoi des algorithmes spécialisés d'apprentissage semi-supervisé sont nécessaires.
+        </p>
+        <iframe src="https://www.youtube.com/embed/v=irPD9_irRVg?autoplay=1&mute=0&controls=0"></iframe>
+    </div>
+    
+</section>
+<section id="section7">
+      <div class="reinforcement-container">
+        <div class="section-title">
+            <h2>Apprentissage par renforcement</h2>
+        </div>
+        <div class="section-text">
+            <p class="text">Avec l'apprentissage par renforcement il s'agit de prendre 
+                des mesures pour maximiser la récompense dans une situation 
+                particulière. Il est utilisé pour trouver 
+                le meilleur comportement possible dans une 
+                situation spécifique, il doit donc "apprendre" à partir de son expérience.
+                Parmi les problèmes traités de cette façon, on peut évoquer : 
+                apprendre à un robot à marcher, conduire
+                 ou accomplir une tâche spécifique 
+                (jouer aux échecs), piloter un agent à travers un labyrinthe etc...</p>
+        </div>
+        <div class="reinforcement-video">
+            <iframe id="reinforcement-video" src="https://www.youtube.com/embed/v=C2zw2H1c5Fk?autoplay=1&mute=1&controls=0"></iframe>
+        </div>
+        <div class="uber-video">
+            <img src="http://eng.uber.com/wp-content/uploads/2017/08/debug.gif" id="driverless-car-gif" alt="uber-video">
+        </div>
+        <div class="chess-video">
+            <img src="https://images.chesscomfiles.com/uploads/game-gifs/90px/green/neo/0/cc/0/0/bEJaSmtzIVRtdTVRZ3Y3UmJsMEt2TVIwbkQzVk12S0N2S1FLREtUWnNBMVRBSlRLQkswS2RyWklySElabEFLTmZtTjFBSzFMcHhMS21FV09IclpJckFYUGNsSXRlZHRqZG1qQWFjS0pFTjJVTlU4WmhmWlFmVFFIY2JISWl5UEg,.gif" alt="chess-gif" id="chess-gif">
+            <p style="font-size: 10px;">L'algorithme <a href="https://www.chess-and-strategy.com/2017/12/intelligence-artificielle-alphazero.html" target="_blank">AlphaZero</a> a maîtrisé toutes les connaissances liées aux échecs en seulement 4 heures !(je joue les noirs)(désolé pour les erreurs je suis débutant :))</p>
+        </div>
+      </div>
+</section>
+<section id="section8">
+    <h2>Régression</h2>
+    <div class="flex-container">
+             <p>Avant d'aborder les différents algorithmes, il nous 
+        clarifier les notions de classification et de regression.
+        La régression est l'approximation d'une fonction (f) des variables(X) à une 
+        variable de sortie continue (y). 
+        Une variable de sortie continue est une valeur réelle, 
+        telle qu'un entier ou d'un flottant. Il s'agit souvent de 
+        quantités, telles que des montants et des tailles.
+        Par exemple, on peut prédire qu'une maison sera vendue pour une valeur spécifique.
+        </p>
+    <img src="https://miro.medium.com/max/1200/1*MtuQBTW0-XbjA2RrP2z3Kw.gif" 
+    id="regression-gif" alt="gif-regression">
+</div>
+    
+</section>
+<section id="section9">
+    <h2>Classification</h2>
+    <div class="flex-container">
+        <p>
+            La classification est la tâche d'approximation d'une fonction de mappage (f) des 
+            variables d'entrée (X) aux variables de sortie discrètes (y).
+        Les variables de sortie sont souvent appelées labels ou catégories. La fonction prédit
+        la classe ou la catégorie pour une observation donnée.
+        Par exemple, un e-mail peut être classé comme appartenant à l'une de deux classes 
+        : "spam" et "non spam".
+        </p>
+        <img src="https://camo.githubusercontent.com/3bb4e2eba7c8a91d71916496bc775e870222f19bb5098cb4bc514ed60078c1e7/68747470733a2f2f626c6f672e7161746573746c61622e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032302f30312f4d4c5f6578616d706c652e6769663f7261773d74727565" alt="animation-classification">
+    </div>
+    
+
+</section>
+<section id="section10">
+    <h2>KNN (K Nearest Neighbors)</h2>
+    <div class="flex-container">
+        <p>L'algorithme des k plus proches voisins, également connu 
+            sous le nom de KNN ou k-NN, est un discriminant d'apprentissage supervisé 
+            non paramétrique, qui utilise la proximité pour effectuer des classifications
+            ou des prédictions sur le regroupement d'un point de données individuel. 
+            Utilisé pour des problèmes de régression ou de 
+            classification, il est généralement utilisé comme algorithme de 
+            classification, en partant de l'hypothèse que des points similaires peuvent 
+            être trouvés les uns à côté des autres.
+        </p>
+        <iframe src="https://www.youtube.com/embed/0p0o5cmgLdE?autoplay=1&mute=1&controls=0">
+        </iframe>
+    </div>
+    
+</section>
+<section id="section11">
+    <h2 style="position: absolute;z-index: 2;">Régression linéaire</h2>
+    <p class="overlay-text">
+        L'analyse de régression linéaire est utilisée pour prédire la valeur d'une 
+        variable en fonction de la valeur d'une autre variable. La variable que vous 
+        voulez prédire est appelée la variable dépendante. La variable que vous 
+        utilisez pour prédire la valeur de l'autre variable est appelée la variable 
+        indépendante. Elle est utlisée pour prédire une quantité. Ce modèle est 
+        simple à comprendre et à utiliser. De ce fait il est utilisé dans beaucoup de
+         domaines différents.
+    </p>
+    <img src="https://camo.githubusercontent.com/be1ca2e3204120625cadb4b345c48b721d366374f20aded5f8ffd76d0f80bb25/68747470733a2f2f696d6167652e6962622e636f2f64377856647a2f315f7863355f43536d5f4b3964386f655f4b59785f4b78656e5f4547672e676966" alt="gif-régression-linéaire" class="background-image">
+</section>
+<section id="section12">
+    <h2>Régression logistique</h2>
+    <p class="overlay-text">
+        La régression logistique prédit le résultat d'une variable dépendante 
+        catégorique. Par conséquent, le résultat doit être une valeur catégorique ou 
+        discrète. Il peut s'agir de Oui ou de Non, de 0 ou de 1, de Vrai ou de Faux, 
+        etc. mais au lieu de donner la valeur exacte de 0 et de 1, elle donne les 
+        valeurs probabilistes qui se situent entre 0 et 1.
+    </p>
+    <img src="https://mrmint.fr/wp-content/uploads/2017/09/Sigmoid-function.png" 
+    class="background-image" alt="fonction-sigmoïde-image">
+</section>
+<section id="section13">
+    <img src="https://jeremykun.com/wp-content/uploads/2017/06/svm_solve_by_hand-e1496076457793.gif" alt="SVM-image" class="background-image">
+    <div class="flex-container">
+        <p>
+            Une machine à vecteurs de support (SVM) est un modèle d'apprentissage 
+            automatique supervisé qui utilise des algorithmes de classification pour 
+            les problèmes de classification à deux groupes. Après avoir donné à un modèle
+            SVM des ensembles de données d'entraînement étiquetées pour chaque 
+            catégorie, il est capable de classer un nouveau texte.
+        </p>
+            <iframe src="https://www.youtube.com/embed/_YPScrckx28?autoplay=1&mute=1&controls=0">
+            </iframe>
+        </div>
+    
+</section>
+<section id="section14">
+    <p class="right-text">Nous sommes loin d'avoir traiter tous les algorithmes 
+        des 4 catégories.
+        Je vous invite à vous rendre <a href="https://datascientest.com/machine-learning-tout-savoir" target="_blank">ici</a> pour plus d'informations sur ce sujet passionnant qu'est le machine learning !
+    </p>
+   <div id="footerwrapper">
+        <h3 id="footerwrappertext">RENTRER AU BERCAIL!</h3>
+        <button onclick="plantedSound();location.href='http://localhost:8889/projet20212363/algorithmes/index.html#section0'">
+            <div class="reversedarrow bounce"></div>
+        </button>
+        </a>
+    </div>
+</section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.5.2/randomColor.js"></script>
+    <script src="https://bundle.run/css-scroll-snap-polyfill@0.1.2"></script>
+    <script src="./scriptcopy.js"></script>
+</body>
+
+</html>
+
