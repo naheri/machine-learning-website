@@ -4,4 +4,6 @@ numpy
 opencv-python
 keras
 deepl
+gTTS
+python==3.9.15
 openai

@@ -1,0 +1,160 @@
+projet20212363                                   
+├─ algorithmes                                   
+│  ├─ index.html                                 
+│  ├─ scriptcopy.js                              
+│  └─ style.css                                  
+├─ applications                                  
+│  ├─ static                                     
+│  │  ├─ css                                     
+│  │  │  ├─ response_style.css                   
+│  │  │  ├─ style.css                            
+│  │  │  └─ video_feed_style.css                 
+│  │  ├─ images                                  
+│  │  │  ├─ hashed-mic.png                       
+│  │  │  ├─ mic-icon.png                         
+│  │  │  ├─ playgroundscreen.png                 
+│  │  │  ├─ reversedarrow2.svg                   
+│  │  │  └─ résumé3èmepersonne.png               
+│  │  ├─ js                                      
+│  │  │  └─ script.js                            
+│  │  └─ sounds                                  
+│  │     ├─ TOONTwang_Plantedcartoon.mp3         
+│  │     ├─ Tongue-clicking-sound.mp3            
+│  │     ├─ bubbleburst.mp3                      
+│  │     └─ speech.mp3                           
+│  ├─ templates                                  
+│  │  ├─ index.html                              
+│  │  ├─ record.html                             
+│  │  ├─ response.html                           
+│  │  ├─ text_to_speech.html                     
+│  │  ├─ transcribe.html                         
+│  │  ├─ tutor.html                              
+│  │  └─ video_feed.html                         
+│  ├─ app.py                                     
+│  ├─ detect_face.xml                            
+│  └─ model.h5                                   
+├─ contact                                       
+│  ├─ form                                       
+│  │  ├─ listes                                  
+│  │  │  └─ listepays.html                       
+│  │  ├─ success                                 
+│  │  │  ├─ index.html                           
+│  │  │  └─ style.css                            
+│  │  ├─ vendor                                  
+│  │  │  ├─ bin                                  
+│  │  │  ├─ composer                             
+│  │  │  │  ├─ ClassLoader.php                   
+│  │  │  │  ├─ InstalledVersions.php             
+│  │  │  │  ├─ LICENSE                           
+│  │  │  │  ├─ autoload_classmap.php             
+│  │  │  │  ├─ autoload_namespaces.php           
+│  │  │  │  ├─ autoload_psr4.php                 
+│  │  │  │  ├─ autoload_real.php                 
+│  │  │  │  ├─ autoload_static.php               
+│  │  │  │  ├─ installed.json                    
+│  │  │  │  ├─ installed.php                     
+│  │  │  │  └─ platform_check.php                
+│  │  │  ├─ phpmailer                            
+│  │  │  │  └─ phpmailer                         
+│  │  │  │     ├─ language                       
+│  │  │  │     │  ├─ phpmailer.lang-af.php       
+│  │  │  │     │  ├─ phpmailer.lang-ar.php       
+│  │  │  │     │  ├─ phpmailer.lang-az.php       
+│  │  │  │     │  ├─ phpmailer.lang-ba.php       
+│  │  │  │     │  ├─ phpmailer.lang-be.php       
+│  │  │  │     │  ├─ phpmailer.lang-bg.php       
+│  │  │  │     │  ├─ phpmailer.lang-ca.php       
+│  │  │  │     │  ├─ phpmailer.lang-cs.php       
+│  │  │  │     │  ├─ phpmailer.lang-da.php       
+│  │  │  │     │  ├─ phpmailer.lang-de.php       
+│  │  │  │     │  ├─ phpmailer.lang-el.php       
+│  │  │  │     │  ├─ phpmailer.lang-eo.php       
+│  │  │  │     │  ├─ phpmailer.lang-es.php       
+│  │  │  │     │  ├─ phpmailer.lang-et.php       
+│  │  │  │     │  ├─ phpmailer.lang-fa.php       
+│  │  │  │     │  ├─ phpmailer.lang-fi.php       
+│  │  │  │     │  ├─ phpmailer.lang-fo.php       
+│  │  │  │     │  ├─ phpmailer.lang-fr.php       
+│  │  │  │     │  ├─ phpmailer.lang-gl.php       
+│  │  │  │     │  ├─ phpmailer.lang-he.php       
+│  │  │  │     │  ├─ phpmailer.lang-hi.php       
+│  │  │  │     │  ├─ phpmailer.lang-hr.php       
+│  │  │  │     │  ├─ phpmailer.lang-hu.php       
+│  │  │  │     │  ├─ phpmailer.lang-hy.php       
+│  │  │  │     │  ├─ phpmailer.lang-id.php       
+│  │  │  │     │  ├─ phpmailer.lang-it.php       
+│  │  │  │     │  ├─ phpmailer.lang-ja.php       
+│  │  │  │     │  ├─ phpmailer.lang-ka.php       
+│  │  │  │     │  ├─ phpmailer.lang-ko.php       
+│  │  │  │     │  ├─ phpmailer.lang-lt.php       
+│  │  │  │     │  ├─ phpmailer.lang-lv.php       
+│  │  │  │     │  ├─ phpmailer.lang-mg.php       
+│  │  │  │     │  ├─ phpmailer.lang-mn.php       
+│  │  │  │     │  ├─ phpmailer.lang-ms.php       
+│  │  │  │     │  ├─ phpmailer.lang-nb.php       
+│  │  │  │     │  ├─ phpmailer.lang-nl.php       
+│  │  │  │     │  ├─ phpmailer.lang-pl.php       
+│  │  │  │     │  ├─ phpmailer.lang-pt.php       
+│  │  │  │     │  ├─ phpmailer.lang-pt_br.php    
+│  │  │  │     │  ├─ phpmailer.lang-ro.php       
+│  │  │  │     │  ├─ phpmailer.lang-ru.php       
+│  │  │  │     │  ├─ phpmailer.lang-sk.php       
+│  │  │  │     │  ├─ phpmailer.lang-sl.php       
+│  │  │  │     │  ├─ phpmailer.lang-sr.php       
+│  │  │  │     │  ├─ phpmailer.lang-sr_latn.php  
+│  │  │  │     │  ├─ phpmailer.lang-sv.php       
+│  │  │  │     │  ├─ phpmailer.lang-tl.php       
+│  │  │  │     │  ├─ phpmailer.lang-tr.php       
+│  │  │  │     │  ├─ phpmailer.lang-uk.php       
+│  │  │  │     │  ├─ phpmailer.lang-vi.php       
+│  │  │  │     │  ├─ phpmailer.lang-zh.php       
+│  │  │  │     │  └─ phpmailer.lang-zh_cn.php    
+│  │  │  │     ├─ src                            
+│  │  │  │     │  ├─ Exception.php               
+│  │  │  │     │  ├─ OAuth.php                   
+│  │  │  │     │  ├─ OAuthTokenProvider.php      
+│  │  │  │     │  ├─ PHPMailer.php               
+│  │  │  │     │  ├─ POP3.php                    
+│  │  │  │     │  └─ SMTP.php                    
+│  │  │  │     ├─ COMMITMENT                     
+│  │  │  │     ├─ LICENSE                        
+│  │  │  │     ├─ README.md                      
+│  │  │  │     ├─ SECURITY.md                    
+│  │  │  │     ├─ VERSION                        
+│  │  │  │     ├─ composer.json                  
+│  │  │  │     └─ get_oauth_token.php            
+│  │  │  └─ autoload.php                         
+│  │  ├─ composer.phar                           
+│  │  ├─ form.php                                
+│  │  ├─ script.js                               
+│  │  ├─ send_database.php                       
+│  │  └─ style.css                               
+│  ├─ index.html                                 
+│  ├─ script.js                                  
+│  └─ style.css                                  
+├─ histoire                                      
+│  ├─ index.html                                 
+│  ├─ script.js                                  
+│  └─ style.css                                  
+├─ images                                        
+│  ├─ ML-image-html-email.webp                   
+│  ├─ applications_screen_terminal.png           
+│  ├─ faded-sun@3000x2000px.png                  
+│  ├─ fondbleu.gif                               
+│  ├─ reversedarrow2.svg                         
+│  ├─ screen1ChatGPT.png                         
+│  ├─ screen2ChatGPT.png                         
+│  ├─ screen3ChatGPT.png                         
+│  └─ wave-haikei.svg                            
+├─ sounds                                        
+│  ├─ TOONTwang_Plantedcartoon.mp3               
+│  ├─ Tongue-clicking-sound.mp3                  
+│  ├─ blocksound.mp3                             
+│  ├─ bubbleburst.mp3                            
+│  └─ whooshsound.mp3                            
+├─ start                                         
+│  ├─ index.html                                 
+│  ├─ start.js                                   
+│  └─ style.css                                  
+├─ README.md                                     
+└─ requirements.txt                              

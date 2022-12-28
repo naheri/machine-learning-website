@@ -35,3 +35,12 @@ function plantedSound(){
 	var snd = new Audio("../sounds/TOONTwang_Plantedcartoon.mp3")
 	snd.play()
 }
+// remove display:none on div with id "remonter-dans-le-temps" 3 seconds after a button is clicked
+const remonterDansLeTemps = document.querySelector("#remonter-dans-le-temps")
+const button = document.querySelector("#declencheur")
+button.addEventListener('click',()=>{
+  setTimeout(function(){
+    remonterDansLeTemps.classList.add('appear')
+  }, 3000);
+}
+)

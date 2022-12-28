@@ -68,7 +68,7 @@ li:hover{
   }
   .navbar #logo-image{
     position: absolute;
-    top: 50px;
+    top: 28px;
     left: 50px;
 
   }
@@ -171,19 +171,16 @@ button{
 .form-group{
     margin-top: 10px;
 }
-#name-label{
+.name-label{
     display: flex;
-    color: aliceblue;
     width: 100%;
     
 }
 #email-label{
     display: flex;
-    color: aliceblue;
 }
 #age-label{
     display: flex;
-    color: aliceblue;
 }
 
 .label-gender-group{
@@ -192,7 +189,6 @@ button{
 }
 p{
     display: flex;
-    color: aliceblue;
     margin-bottom: 0px;
 }
 label{
@@ -201,7 +197,6 @@ label{
 }
 #iPhone{
     display: flex;
-    color: aliceblue;
 }
 .form-control{
     width: 100%;
@@ -217,10 +212,43 @@ footer{
   display: flex;
 }
 /* BOUTON submit_button*/
-.submit-button{
-  border: 2px solid;
-  font: inherit;
-  line-height: 1;
-  margin: 0.5em;
-  padding: 1em 2em;
+/* CSS */
+.submit-button {
+  background-color: #0095ff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 0;
+  outline: none;
+  padding: 8px .8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+  background-color: #07c;
+}
+
+.submit-button:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.submit-button:active {
+  background-color: #0064bd;
+  box-shadow: none;
 }

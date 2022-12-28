@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,11 +32,11 @@
     <div class="container">
         <form method="post" action="send_database.php" id="survey-form" >
         <div class="form-group">
-            <label id="name-label" for="prenom">prénom </label>
+            <label class="name-label" for="prenom">prénom </label>
             <input type="text" name="prenom" id="prenom" class="form-control" placeholder="prénom..." required>
         </div>
         <div class="form-group">
-            <label id="name-label" for="name">nom </label>
+            <label class="name-label" for="name">nom </label>
             <input type="text" name="name" id="name" class="form-control" placeholder="nom..." required>
         </div>
         <div class="form-group">
@@ -48,7 +48,7 @@
             <input type="number" min="0" name="age" id="age" class="form-control" placeholder="age" required>
         </div>
         <div class="form-group">
-            <label for="activity" id="activity-label"><p>secteur d'activité</p></label>
+            <label for="activity" id="activity-label">secteur d'activité</label>
             <select id="activity" name="activity" class="form-control" required>
                 <option disabled selected value>sélectionnez votre secteur d'activité</option>
                 <option value="Étudiant">Étudiant</option>
@@ -63,7 +63,7 @@
             </select>
         </div>
         <div class="form-group">
-            <label for="pays" id="pays-label"><p>Pays</p></label>
+            <label for="pays" id="pays-label">Pays</label>
             <select name="pays" id="pays" class="form-control" required>
                 <option disabled selected value>sélectionnez un pays</option>
                 <?php include("../form/listes/listepays.html");?>
@@ -137,12 +137,8 @@
             <textarea name="comment" id="textarea" placeholder="questions, commentaires...."></textarea>
         </div>
         <div class="form-group">
-            <button class="submit-button" type="submit" onclick="sendEmail()">SOUMETTRE</button>
+            <input type="submit" class="submit-button" onclick="sendEmail()" value="ENVOYER">
         </div>
-
-
-      
-    
     </form>
     </div>
     <footer><p>
@@ -155,7 +151,7 @@ Pour exercer ces droits ou pour toute question sur le traitement de vos données
 Si vous estimez, après nous avoir contactés, que vos droits « Informatique et Libertés » ne sont pas respectés, vous pouvez adresser une réclamation à la CNIL.
 </p>
 </footer>
+<script src="../form/script.js"></script>
 </body>
 </html>
 
-<script src="../form/script.js"></script>

@@ -73,9 +73,9 @@ try {
     $mail_to_me->isHTML(true);                               //Set email format to HTML
     $mail->Subject = 'Mail de remerciement';
     $mail_to_me->Subject = "Quelqu'un a rempli le formulaire de contact";
-    $mail_to_me->Body = 'Un utilisateur ('.$nom.' '.$prenom.') a rempli le formulaire de contact.';
+    $mail_to_me->Body = 'Un utilisateur ('.$nom.' '.$prenom.') a rempli le formulaire de contact. Ouvrez MySQLWorkbench pour voir les détails';
     $mail->Body    = '<!DOCTYPE html>
-    <html lang="en">
+    <html lang="fr">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">

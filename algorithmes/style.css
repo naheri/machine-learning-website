@@ -15,14 +15,14 @@
   h3{
     color: rgb(238, 228, 228);
   }
-  a{
+  p a{
     color: rgb(238, 228, 228);
   }
   a:visited{
     color: rgb(238, 228, 228);
   }
   .navbar .nav-links ul li a {
-    color: rgb(238, 228, 228);
+    color: rgb(0, 0, 0);
   }
   .navbar a{
     color: rgb(238, 228, 228);
@@ -144,7 +144,7 @@ li{
 p{
   font-weight: 300;
   line-height: 1.6;
-  font-size: 2.5vw;
+  font-size: 16px;
   z-index: 2;
   margin: 30px;
 }

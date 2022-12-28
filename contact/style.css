@@ -4,8 +4,11 @@
     background-color: #3f3f45;
     color: #f1f1f1;
   }
+  .collapsible{
+    color: #f1f1f1;
+  }
   .collapsible:after {
-    color: rgb(57, 56, 56);
+    color: #f1f1f1;
   }
   a {
     color:#f1f1f1
@@ -13,11 +16,20 @@
   img {
     filter: grayscale(20%);
   }
+  .navbar .nav-links ul li a{
+    color: antiquewhite;
+  }
   .content{
     background-color: #3f3f45;
   }
 }
 @media (prefers-color-scheme: light) {
+  .collapsible{
+    color:black;
+  }
+  .collapsible:after {
+    color: #000000;
+  }
   body{
     background-color: #fbf2ff;
   }
@@ -27,7 +39,10 @@
   img {
   filter: grayscale(20%);
   }
+  .navbar .nav-links ul li a{
+    color: blueviolet;
   }
+}
 * {
 	box-sizing: border-box;
   padding: 0;
@@ -38,11 +53,12 @@
 body {
 	scroll-behavior: smooth;
   height: fit-content;
+  height: 200vh;
 }
 
 a{
   transition: 0.3s;
-  text-decoration: none;
+  text-decoration: underline;
   font-weight: 500;
 }
 a:visited{
@@ -69,12 +85,14 @@ li:hover{
 }
 .navbar .nav-links ul{
   display: flex;
+  align-items: center;
 }
 .navbar .nav-links ul li{
   margin: 0 25px;  
 }
 .navbar .nav-links ul li a{
   font-weight: 700;
+  text-decoration: none;
 }
 .navbar .menu-hamburger{
   display: none;
@@ -121,7 +139,6 @@ li:hover{
   }
   .navbar .nav-links ul li a{
     font-weight: 700;
-    color: darkorchid;
   }
   .navbar .menu-hamburger{
     display: block;
@@ -143,7 +160,6 @@ li:hover{
   width: 500px;
 }
 .collapsible {
-  color: rgb(5, 4, 4);
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -155,7 +171,7 @@ li:hover{
 .image-slider{
   display: flex;
   flex-direction: column;
-  transform: translateX(63rem)translateY(-33rem);
+  transform: translateX(63rem)translateY(19rem);
   align-items: center;
   z-index: 0;
   position: absolute;
@@ -232,7 +248,7 @@ li:hover{
 .question{
   border-top: 1px solid;
 }
-#FAQ.box:last-child{
+#FAQ.box .question:nth-child(5){
   border-bottom: 1px solid;
 }
 
