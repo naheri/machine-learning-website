@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>applications</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="../static/css/style.css">
+  <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/d/d5/Hey_Machine_Learning_Logo.png" type="image/x-icon">
+</head>
+<body>
+<section id="section0">
+  <a href="http://localhost:8889/projet20212363/start/index.html">
+    <img id=logo-image src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Hey_Machine_Learning_Logo.png" alt="logo">
+  </a>
+  <nav class="navbar">
+    <div class="nav-links"> 
+      <ul>
+        <li><a href="http://localhost:8889/projet20212363/start/index.html">acceuil</a></li>
+        <li><a href="http://localhost:8889/projet20212363/histoire/index.html">histoire</a></li>
+        <li><a href="http://localhost:8889/projet20212363/algorithmes/index.html">algorithmes</a></li>
+        <li><a href="http://127.0.0.1:5000/">applications</a></li>
+        <li><a href="http://localhost:8889/projet20212363/contact/index.html">contact</a></li>
+      </ul>
+    </div>
+    <img class="menu-hamburger" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png" alt="icône menu hamburger">
+  </nav>
+  <div class="container">
+    <div class="title">
+      <h1>applications du machine learning</h1>
+    </div>
+    <div class="text">
+      <p>Le Machine Learning (Machine Learning) est le dernier mot à la mode qui balaie le paysage commercial mondial. Il s'est emparé de l'imagination populaire, 
+        évoquant des visions futuristes d'IA et de robots auto-apprenants. Dans différents secteurs, Le Machine Learning a ouvert la voie à des 
+        réalisations et des outils technologiques qui auraient été impossibles il y a quelques années. Des moteurs de prédiction à la diffusion en direct 
+        de la télévision en ligne, il alimente les innovations révolutionnaires qui soutiennent nos modes de vie modernes.
+      </p>
+    </div>
+    <div class="illustration">
+      <button onclick="bubbleBurstSound()">Play Sound</button>
+
+
+<script>
+  function bubbleBurstSound(){
+        var snd = new Audio("../sounds/bubbleburst.mp3")
+        snd.play()
+    }
+</script>
+      <img alt="intelligence-artificielle-schéma" src="https://directconnectionusa.com/wp-content/uploads/2021/10/GettyImages-844535726.jpg">
+    </div>
+    <div class="try"></div>
+  </div>
+</section>
+<section id="section1">
+  <div class="container">
+    <div class="title">
+      <h2>Reconnaissance d'images</h2>
+    </div>
+    <div class="text">
+      <p>La reconnaissance d'images est l'une des applications les plus courantes de Le Machine Learning. Elle est utilisée pour identifier des objets, des personnes, des lieux, des images numériques, etc. Le cas d'utilisation le plus courant de la reconnaissance d'images et de la détection de visages est la suggestion automatique de marquage d'amis :
+      Facebook nous offre une fonction de suggestion automatique de marquage d'amis. Chaque fois que nous téléchargeons une photo avec nos amis Facebook, nous recevons automatiquement une suggestion de marquage avec le nom, et la technologie derrière cela est l'algorithme de détection et de reconnaissance des visages de Le Machine Learning.
+      Elle est basée sur le projet de Facebook appelé "Deep Face", qui est responsable de la reconnaissance des visages et de l'identification des personnes sur la photo.</p>
+    </div>
+    <div class="illustration">
+      <iframe src="https://www.youtube.com/embed/Cgxsv1riJhI?controls=0" title="How computers learn to recognize objects instantly | Joseph Redmon" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="try">
+      <form action="/get_gender_start" method="post">
+        <p>Faites "deviner" à un algorithme de détection de genre votre sexe :</p>
+        <input type="submit" value="Ouvrir la caméra/commencer" class="button">
+      </form>
+      <form action="/get_gender_stop" method="post">
+        <input type="submit" value="stop/fermer caméra" class="stop-btn">
+      </form>
+      <form action="/video_feed_page" method="post">
+        <input type="submit" value="ouvrir la fenêtre" class="button">
+      </form>
+      <!--gender-recognition-->
+    </div>
+  </div>
+</section>
+
+<section id="section2">
+  <div class="container">
+    <div class="title">
+      <h2>Reconnaissance vocale</h2>
+    </div>
+    <div class="text">
+      <p>
+        Lorsque nous utilisons Google, nous avons l'option "Recherche vocale", qui relève de la reconnaissance vocale, et c'est une application populaire de Le Machine Learning.
+La reconnaissance vocale est un processus qui consiste à convertir des instructions vocales en texte, et elle est également connue sous le nom de "Speech to text" ou "Computer speech recognition". À l'heure actuelle, les algorithmes d'apprentissage automatique sont largement utilisés par diverses applications de la reconnaissance vocale. L'assistant Google, Siri, Cortana et Alexa utilisent la technologie de reconnaissance vocale pour suivre les instructions vocales.
+      </p>
+    </div>
+
+    <div class="illustration">
+      <img alt="reconnaissance-vocale-image" src="https://uploads-ssl.webflow.com/5f78e2718ee539597bb33346/61291d90fc52331b6f134aa5_Blog%20Banner%20Voice%20recognition%20and%20speech%20recognition(1).png">
+    </div>
+    <div class="try">
+      <form method="POST" action="/record">
+        <input type="submit" class="button" id="microphone-button" value="Reconnaissance vocale" style="margin: 0 5px;">
+      </form>
+      <form action="/text_to_speech" method="post">
+        <input type="text" name="texte_vers_audio" placeholder="entrez un texte...">
+        <input type="submit" value="Texte vers voix" class="button">
+    </form> 
+    </div>
+  </div> 
+
+</section>
+<section id="section3">
+  <div class="container">
+    <div class="title">
+      <h2>CHAT-GPT</h2>
+    </div>
+    <div class="text">
+      <img src="../static/images/résumé3èmepersonne.png" alt="résuméCHATGPT" style="width: 100%;">
+    </div>
+    <div class="illustration">
+      <blockquote class="tiktok-embed" style="visibility: unset;width: 321px;max-height: 731px;transform: translateY(62px);height: 740px;" cite="https://www.tiktok.com/@jolyvk/video/7173738539643882757" data-video-id="7173738539643882757">
+        <div> 
+          <a target="_blank" title="@jolyvk" href="https://www.tiktok.com/@jolyvk?refer=embed">@jolyvk</a>CHAT-GPT<a title="ia" target="_blank" href="https://www.tiktok.com/tag/ia?refer=embed"></a> <a title="intelligenceartificielle" target="_blank" href="https://www.tiktok.com/tag/intelligenceartificielle?refer=embed">#intelligenceartificielle</a> <a title="chatgpt" target="_blank" href="https://www.tiktok.com/tag/chatgpt?refer=embed">#chatgpt</a> <a title="gpt3" target="_blank" href="https://www.tiktok.com/tag/gpt3?refer=embed">#gpt3</a> <a target="_blank" title="♬ son original - Vincent K JOLY" href="https://www.tiktok.com/music/son-original-7173738563266153221?refer=embed">♬ son original - Vincent K JOLY</a> 
+        </div>
+      </blockquote> 
+      <script async src="https://www.tiktok.com/embed.js"></script>
+    </div>
+    <div class="try">
+
+    </div>
+  </div>
+</section>
+<section id="section4">
+  <div class="container">
+    <div class="title">
+      <h2>OPEN AI</h2>
+    </div>
+    <div class="text">
+      <p>
+        OpenAI vise à développer et à promouvoir l'IA d'une manière responsable et éthique. L'organisation a développé de nombreux modèles de langage de pointe, notamment GPT (Generative Pre-training Transformer) et GPT-3. Elle a également travaillé sur des projets d'IA visant à améliorer la sécurité et la transparence de l'apprentissage par renforcement.
+        Elle se démarque des autres par le développement d'outils tels que CHAT-GPT ou encore plus récemment <a href="https://www.lesnumeriques.com/pro/point-e-un-outil-pour-la-modelisation-3d-base-sur-l-intelligence-artificielle-presente-par-openai-n201239.html" target="_blank">POINT-E</a>.
+      </p>
+    </div>
+    <div class="illustration">
+
+    </div>
+    <div class="try"></div>
+  </div>
+</section>
+<section id="section5">
+  <div class="container">
+    <div class="title">
+      <h2>Analyse de texte</h2>
+    </div>
+    <div class="text">
+      <p>
+        Le text mining, également connu sous le nom de traitement automatique du langage, peut être défini comme un ensemble de techniques issues de l'intelligence artificielle. Le text mining est largement utilisé dans le secteur du marketing, mais aussi dans de nombreux autres domaines comme la communication ou les sciences politiques. Il consiste à extraire des données pour recréer des informations à partir de corpus de textes en les classant et en les analysant afin d'établir des tendances.
+      </p>
+    </div>
+    <div class="illustration">
+      <img src="https://www.predictiveanalyticstoday.com/wp-content/uploads/2020/01/Top-Sentiment-Analysis-Software.png" alt="analyse-de-sentiments-image">
+    </div>
+    <div class="try">
+      <form method="POST" action="." name="sentiment-form">
+        <p>Entrez une phrase, et le modèle d'IA "text-davinci-003" se chargera de vous dire si cette phrase est à connotation négative, neutre ou positive</p>
+        <input type="text" name="texte" placeholder="entrez une phrase...">
+        <input type="submit" value="Trouver le sentiment" class="button">
+      </form>
+    </div>
+  </div>
+</section>
+<section id="section6">
+  <div class="container">
+    <div class="title">
+      <h2>Discussion</h2>
+    </div>
+    <div class="text">
+      <p>Nous sommes déjà habitués à avoir des discussions simples avec des intelligences artificielles, en effet les assistants vocaux comme Cortana, Alexa, ou encore Siri se basent sur des IA.
+        Mais aujourd'hui, nous allons vous présenter une IA qui peut avoir une discussion avec vous, et qui peut même vous répondre en fonction de ce que vous dites. Cette IA est particuliérement entraînée à vous répondre sur un sujet précis, le Machine Learning.
+        Sans grande surprise elle a été dévelopée par OpenAI.<br>
+        
+      </p>
+    </div>
+    <div class="illustration">
+      <img src="../static/images/playgroundscreen.png" alt="image-playground">
+    </div>
+    <div class="try">
+      <form method="POST" action="/tutor">
+        <input type="submit" value="Discuter avec l'IA" class="button">
+      </form>
+    </div>
+  </div>
+</section>
+<section id="section7">
+  <div class="container">
+    <div class="title">
+      <h2>Voitures autonomes</h2>
+    </div>
+    <div class="text">
+      <p>
+        Les voitures autopilotées, également appelées véhicules autonomes ou VA, sont des véhicules capables de naviguer et de conduire sans intervention humaine. Elles utilisent une variété de capteurs et de technologies, tels que le lidar, le radar et la vision par ordinateur, pour détecter leur environnement et prendre des décisions sur la façon de naviguer et de conduire en toute sécurité. Les voitures autonomes ont le potentiel de révolutionner les transports en augmentant la sécurité, en réduisant les embouteillages et en améliorant l'efficacité. Elles peuvent également offrir une mobilité accrue aux personnes qui ne sont pas en mesure de conduire en raison de leur âge, d'un handicap ou d'autres facteurs. Le développement des voitures autonomes est un domaine actif de recherche et de développement, et de nombreuses entreprises et organisations travaillent sur cette technologie.
+      </p>
+    </div>
+    <div class="illustration">
+      <iframe src="https://www.youtube.com/embed/lztKNLV85VI" title="Voitures autonomes : c'est pour quand en France ?" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+<section id="section8">
+  <div class="container">
+    <div class="title">
+      <h2>Recommandation de produits / Publicités</h2>
+    </div>
+    <div class="text">
+      <p>
+        Le Machine Learning est largement utilisé par diverses entreprises de commerce électronique et de divertissement telles qu'Amazon, Netflix, etc. pour recommander des produits à l'utilisateur. Chaque fois que nous recherchons un produit sur Amazon, nous commençons à recevoir une publicité pour le même produit lorsque nous surfons sur le même navigateur, et ce grâce à Le Machine Learning.
+        Google comprend l'intérêt de l'utilisateur en utilisant divers algorithmes d'apprentissage automatique et suggère le produit en fonction de l'intérêt du client.
+        De même, lorsque nous utilisons Netflix, nous recevons des recommandations pour des séries de divertissement, des films, etc.
+      </p>
+    </div>
+    <div class="illustration">
+      <img src="https://miro.medium.com/max/1400/1*R2cNKn98tsSb8ocLMs6SKg.png" alt="image-recommandation-system">
+    </div>
+  </div>
+</section>
+<section id="section9">
+  <div class="container">
+    <div class="title">
+      <h2>Détection de fraude bancaire</h2>
+    </div>
+    <div class="text">
+      <p>Le Machine Learning rend nos transactions en ligne sûres et sécurisées en détectant les transactions frauduleuses. Chaque fois que nous effectuons une transaction en ligne, il peut y avoir plusieurs façons de réaliser une transaction frauduleuse, comme de faux comptes, de faux identifiants, et de voler de l'argent au milieu d'une transaction. Pour détecter cela, le réseau neuronal Feed Forward nous aide en vérifiant s'il s'agit d'une transaction authentique ou d'une transaction frauduleuse.
+        Pour chaque transaction authentique, la sortie est convertie en valeurs de hachage, et ces valeurs deviennent l'entrée du tour suivant. Pour chaque transaction authentique, il existe un modèle spécifique qui est modifié pour la transaction frauduleuse, ce qui permet de la détecter et de rendre nos transactions en ligne plus sûres.</p>
+    </div>
+    <div class="illustration">
+      <img src="https://perfectial.com/wp-content/uploads/2020/04/fraud-02-scaled.jpg" alt="image-détection de fraude">
+    </div>
+  </div>
+</section>
+<section id="section10">
+  <div class="container">
+    <div class="title">
+      <h2>Conclusion</h2>
+    </div>
+    <div class="text">
+      <p>Détection d'emails "spams", traductions, diagnostics médicaux, prédiction de cours boursiers etc, les applications sont trop nombreuses pour toutes être traitées ici. </p>
+    </div>
+  </div>
+  <div id="footerwrapper">
+    <h3 id="footerwrappertext">RENTRER AU BERCAIL!</h3>
+    <button onclick="plantedSound();location.href='http://127.0.0.1:5000/#section0'">
+        <div class="reversedarrow bounce"></div>
+    </button>
+</div>
+</section>
+<script>
+  // joue un son et ajoute une clasee quand on clique sur le bouton
+const menuHamburger = document.querySelector(".menu-hamburger")
+const navLinks = document.querySelector(".nav-links")
+    function bubbleBurstSound(){
+        var snd = new Audio("../static/sounds/bubbleburst.mp3")
+        snd.play()
+    }
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    bubbleBurstSound();
+    })
+    function tongueSound(){
+	var snd = new Audio("../static/sounds/Tongue-clicking-sound.mp3")
+	snd.play()
+  }
+function plantedSound(){
+	var snd = new Audio("../static/sounds/TOONTwang_Plantedcartoon.mp3")
+	snd.play()
+}
+</script>
+</body>
+
+
+</html>

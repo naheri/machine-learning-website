@@ -1,0 +1,192 @@
+* {
+	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+body{
+    background: rgb(58,59,180);
+    background: linear-gradient(90deg, rgba(58,59,180,1) 0%, rgba(149,29,253,1) 50%);
+    width: 100%;
+    height: 100%;
+    font-family: system-ui, -apple-system, "system-ui", ".SFNSText-Regular", sans-serif;
+    position: relative;
+}
+p{
+  font-family: system-ui, -apple-system, "system-ui", ".SFNSText-Regular", sans-serif;
+  font-size: 20px;  
+  color:wheat;
+  padding: 30px;
+}
+
+  .container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 1fr 0.7fr 1.3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "navbar navbar navbar navbar navbar"
+      "video-feed video-feed video-feed video-feed video-feed"
+      "video-feed video-feed video-feed video-feed video-feed"
+      "video-feed video-feed video-feed video-feed video-feed"
+      "text text text text text";
+  }
+  
+  .navbar { grid-area: navbar; }
+  
+  .video-feed { 
+    grid-area: video-feed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+  .video-feed img{
+    width: 80%;
+    display: block;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+  }
+  .text { grid-area: text; }
+  p a{
+    font-weight: 500;
+    text-decoration: underline;
+    display: inline-block;
+  }
+  p a:hover{
+    transform: scale(1.06);
+  }
+  a img{
+    width: 70px;
+    margin: 20px;
+  }
+  a:visited{
+    color: antiquewhite;
+  }
+  .navbar{
+    position: fixed;
+    top: 45px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    transform: translateY(-3rem);
+    z-index: 999999999;
+    margin-bottom: 25px;
+  }
+  .navbar .nav-links ul{
+    display: flex;
+  }
+  .navbar .nav-links ul li{
+    margin: 0 25px;  
+  }
+  .navbar .nav-links ul li a{
+    font-weight: 700;
+    color: antiquewhite;
+  }
+  
+  .navbar .menu-hamburger{
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 35px;
+  }
+  .stop-btn {
+    background-color: #b81515;
+    padding: 7px;
+    width: 230px;
+    color: bisque;
+    border-radius: 6px;
+    font-family: system-ui, -apple-system, "system-ui", ".SFNSText-Regular", sans-serif;
+    animation: stop-btnbounce 4s infinite;
+    cursor: pointer;
+  }
+  
+  @keyframes stop-btnbounce {
+    5%,
+    50% {
+      transform: scale(1);
+    }
+    10% {
+      transform: scale(1);
+    }
+    15% {
+      transform: scale(1);
+    }
+    20% {
+      transform: scale(1) rotate(-5deg);
+    }
+    25% {
+      transform: scale(1) rotate(5deg);
+    }
+    30% {
+      transform: scale(1) rotate(-3deg);
+    }
+    35% {
+      transform: scale(1) rotate(2deg);
+    }
+    40% {
+      transform: scale(1) rotate(0);
+    }
+  }
+  /* responsive pour mobile*/
+  @media screen and (max-width:900px){
+    
+    section .flex-container img{
+      width: 80%;
+      height: 200px;
+    }
+    #section7 .text{
+      transform: translateX(50%);
+    }
+  
+    .nav-links.mobile-menu{
+      margin-left: 0;
+    }
+    .navbar{
+      padding: 0;
+    }
+    .navbar #logo-image{
+      position: absolute;
+      top: 50px;
+      left: 50px;
+    }
+    /*changement de propriétés de la navbar*/
+    .nav-links{
+      top: 0;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: -100%;
+      backdrop-filter: blur(8px);
+      transition: all 0.5s ease;
+    }
+    .nav-links ul{
+      display: flex;
+      flex-direction: column;
+    }
+    .navbar .nav-links ul li{
+      margin: 25px 0;
+      font-size: 1.5em;  
+    }
+    .navbar .nav-links ul li a{
+      font-weight: 700;
+    }
+    .navbar .menu-hamburger{
+      display: block;
+      width: 50px;
+    }
+    
+  }
+  

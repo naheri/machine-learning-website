@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/response_style.css') }}">
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/d/d5/Hey_Machine_Learning_Logo.png" type="image/x-icon">
+    <title>Speech-to-Text</title>
+  </head>
+  <body>
+    
+    <div class="buttons">
+      <button id="start-button" onclick="startRecording()" class="mic-button">Start<img src="../static/images/mic-icon.png" alt="image-micro-ouvert"></button>
+      <button id="stop-button" onclick="stopRecording()" class="mic-button bounce">Stop<img src="../static/images/hashed-mic.png" alt="image-micro-fermé"></button>
+    </div>
+    <p>Vous n'êtes pas obligés d'appuyer sur le bouton stop, le programme reconnaît automatiquement quand vous terminez de parler.</p>
+
+    <form id="transcription-form" action="/transcribe" method="post">
+      <input type="hidden" name="text" id="transcription-text">
+    </form>
+
+    <script>
+      // Set up the Web Speech API
+      const recognition = new webkitSpeechRecognition();
+      recognition.continuous = false;
+      recognition.interimResults = true;
+      recognition.lang = 'FR-fr';
+
+      let transcription = '';
+
+      // Start the microphone
+      function startRecording() {
+        recognition.start();
+      }
+
+      // Stop the microphone
+      function stopRecording() {
+        recognition.stop();
+      }
+
+      // Submit the transcription form with the transcribed text
+      recognition.onresult = event => {
+        for (let i = event.resultIndex; i < event.results.length; i++) {
+          let result = event.results[i][0];
+          if (event.results[i].isFinal) {
+            transcription += result.transcript;
+          }
+        }
+        document.getElementById('transcription-text').value = transcription;
+      }
+      // print the transcription to the console
+
+      // post the transcription form when the microphone stops
+      recognition.onend = () => {
+        document.getElementById('transcription-form').submit();
+      }
+    </script>
+  </body>
+</html>

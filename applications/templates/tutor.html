@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/response_style.css') }}">
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/d/d5/Hey_Machine_Learning_Logo.png" type="image/x-icon">
+    <title>Assistant ML/IA</title>
+    <style> @import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap'); </style>
+</head>
+<body>
+    <h1 style="font-family: 'Rubik Distressed', cursive;">Assistant ML/IA</h1>
+    <div class="flex-container">
+        <form action="/discussion" method="POST" style="
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: flex-start;
+    align-items: stretch;
+">
+        <input type="text" name="message" style="border-radius: 6px;width:75vw" placeholder="entrez n'importe quelle question relative au Machine Learning...">
+        <input type="submit" class="button" value="Envoyer">
+    </form>
+    <form action="/reset" method="POST">
+        <input type="submit" class="button" value="Réinitialiser" style="background-color: rgba(238, 8, 8, 0.782);">
+    </form>
+    </div>
+    
+    <textarea readonly placeholder="comment créer un algorithme de détéction de fraude à la carte bancaire ?\n\n
+    OpenAI :\n\ncomment l'intégrer à mon site ?\n\n OpenAI:">
+    {% for response,message in responses_messages %}
+          VOUS : {{message}}
+          OpenAI : {{ response }}{{ '\n' }}
+        {% endfor %}
+    </textarea>
+<script>
+    // pour que les sauts de ligne soient pris en compte dans le placeholder de la textarea
+    var textAreas = document.getElementsByTagName('textarea');
+Array.prototype.forEach.call(textAreas, function(elem) {
+    elem.placeholder = elem.placeholder.replace(/\\n/g, '\n');
+});
+</script>
+</body>
+
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/video_feed_style.css') }}">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/108/108900.png" type="image/x-icon">
+    <title>réponse</title>
+</head>
+<body>
+      <div class="container">
+        <div class="header">
+            <a href="../start/index.html">
+                <img id=logo-image src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Hey_Machine_Learning_Logo.png" alt="logo">
+              </a>
+              <nav class="navbar">
+                <div class="nav-links"> 
+                  <ul>
+                    <li><a href="http://localhost:8889/projet20212363/start/index.html">acceuil</a></li>
+                    <li><a href="http://localhost:8889/projet20212363/histoire/index.html">histoire</a></li>
+                    <li><a href="http://localhost:8889/projet20212363/algorithmes/index.html">algorithmes</a></li>
+                    <li><a href="http://127.0.0.1:5000/">applications</a></li>
+                    <li><a href="http://localhost:8889/projet20212363/contact/index.html">contact</a></li>
+                  </ul>
+                </div>
+                <img class="menu-hamburger" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png" alt="icône menu hamburger">
+              </nav>
+        </div>
+        <div class="video-feed">
+            <img src="{{ url_for('video_feed') }}" alt="retour-caméra">
+            <form action="/get_gender_stop" method="post">
+                <input type="submit" value="stop/fermer caméra" class="stop-btn">
+            </form>
+        </div>
+        <div class="text">
+            <p>
+                Vous avez là un infime aperçu de ce que peut faire le machine learning, si vous avez bien suivi, vous aurez remarqué qu'un tel problème s'apparente à un problème de <a href="http://localhost:8889/projet20212363/algorithmes/index.html#section9">classification</a> pour réaliser une telle prouesse il faut tout d'abord un modèle d'apprentissage automatique propre à l'utilisation qu'on veut en faire (un modèle pour la détection de genre sera différent d'un modèle de conduite autonome) quiest formé à l'aide d'un énorme ensemble de données d'images de visages qui ont été étiquetés avec le sexe de l'individu.
+                Le modèle peut ensuite déterminer le sexe d'une personne en fonction des caractéristiques qu'elle s'est habituée à identifier dans les données d'apprentissage.
+                La première étape de la formation du modèle consiste à rassembler une collection importante d'exemples d'images de visage.
+                Le modèle est ensuite alimenté avec les images prétraitées (converties en un format adapté au modèle, en tableau) et les étiquettes associées (c'est-à-dire le sexe de la personne dans l'image).
+                Une fois que le modèle a été formé, il peut être utilisé pour prédire le sexe d'une personne en lui fournissant une image de son visage et en faisant en sorte que le modèle produise une probabilité pour chaque résultat possible.
+            </p>
+            <p>Sources : <a href="https://chat.openai.com/chat">CHAT-GPT</a>,la plupart de <a href="https://github.com/search?q=gender+detection">ces repositories</a></p>
+        </div>
+      </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/response_style.css') }}">
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/d/d5/Hey_Machine_Learning_Logo.png" type="image/x-icon">
+    <title>réponse</title>
+</head>
+<body>
+  <div class="container">
+    <div class="bounce">
+      <button class="button" onclick="playSound()">Jouer le son généré</button>
+    </div>
+    <p>En tant qu'humain, une tâche aussi basique comme lire une phrase vous paraît simple et cela ne vous impressionne peut-être pas.
+      Cependant, sachez que pour une machine une telle tâche il faut un système basé sur l'intelligence artificielle et doté de capacités de <a href="https://fr.wikipedia.org/wiki/Traitement_automatique_des_langues">traitement du langage naturel</a> (Natural Language Processing en anglais).
+      Un gros bloc de texte est transmis au moteur NLP, qui le décompose en petits fragments de mots et de phrases ; chaque mot est ensuite traité pour produire la voix la plus souhaitable.
+</p>
+  </div>
+<script>
+  function playSound(){
+        var snd = new Audio("../static/sounds/speech.mp3")
+        snd.play()
+    }
+</script>    
+</body>
+</html>
