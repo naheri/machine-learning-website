@@ -7,16 +7,12 @@ C'est un site informatif sur le machine learning, quelques fonctionnalités qui 
 ## Python
 Vous pouvez installer un environnement virtuel dans lequel vous installerez toutes les librairies de requirements.txt et python 3.9.15
 Si vous êtes sur MacOS ou Linux, suivez un tutoriel pour installer Tensorflow
-Vous pouvez utiliser Miniforge, Miniconda ou virtualenv
+Vous pouvez utiliser Miniforge, Miniconda, Anaconda, pyvenv ou virtualenv
 
-Dans le cas où vous utilisez Miniforge (ce que j'ai utilisé) :
 
-```bash
-conda 
-```
 ## PHP
 
-Installez [MAMP](https://www.mamp.info/en/downloads/), ou [XAMPP](https://www.apachefriends.org/fr/index.html) et placez le dossier projet20212363 dans htdocs.
+Installez [MAMP](https://www.mamp.info/en/downloads/), ou [XAMPP](https://www.apachefriends.org/fr/index.html) et placez le dossier cloné dans htdocs.
 
 Si vous ne recevez pas de mail après avoir soumis le formulaire, regradez vos spams ou installez PHPMailer dans le dossier "form"
 
@@ -56,7 +52,7 @@ Configurez votre port localhost sur MAMP ou XAMPP sur 8889, pour que tous les li
 
 Pour accéder à la page "applications" et toutes ses fonctionnalités, lancez le serveur Flask à partir du dossier applications:
 
-![Alt text](../projet20212363/images/applications_screen_terminal.png?raw=true "terminal")
+
 
 Et lancez la commande :
  ```bash
@@ -69,4 +65,4 @@ Running on http://127.0.0.1:5000
 ```
 ## Remarque
 
-Il y a un mode sombre, mais pour les pages "algorithmes" et "histoire" il faut actualiser pour qu'il se mette en place
+Il y a un mode sombre qui dépend des paramètres de l'utilisateur.
