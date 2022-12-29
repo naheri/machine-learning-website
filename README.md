@@ -17,6 +17,9 @@ conda
 ## PHP
 
 Installez [MAMP](https://www.mamp.info/en/downloads/), ou [XAMPP](https://www.apachefriends.org/fr/index.html) et placez le dossier projet20212363 dans htdocs.
+
+Si vous ne recevez pas de mail après avoir soumis le formulaire, regradez vos spams ou installez PHPMailer dans le dossier "form"
+
 ## Librairies
 ```bash
 pip install -r requirements.txt
