@@ -129,7 +129,7 @@ def get_gender():
   global gender
   loop_running = True
   # chargement du modèle de prédiction du genre
-  model = load_model("model.h5")
+  model = load_model("gender_detection.model")
 
 
   # ouverture de la webcam
@@ -140,12 +140,13 @@ def get_gender():
     # capture d'une image depuis la webcam
     ret, frame = cam.read()
     # Redimensionnement de l'image en format 110x80, format attendu par le modèle
-    frame = cv2.resize(frame, (110, 80))
+    frame = cv2.resize(frame, (96, 96))
     # ajout d'une dimension pour le modèle
     frame = tf.expand_dims(frame, axis=0)
     frame = tf.expand_dims(frame, axis=3)
     # suppression d'une dimension inutile pour le modèle
     frame = frame[:,:,:,:,-1]
+    frame = tf.tile(frame, [1, 1, 1, 3])
 
 
     # utilisation du modèle pour prédire le genre sur l'image capturée
