@@ -171,7 +171,7 @@ li:hover{
 .image-slider{
   display: flex;
   flex-direction: column;
-  transform: translateX(63rem)translateY(19rem);
+  transform: translateX(53rem)translateY(-20rem);
   align-items: center;
   z-index: 0;
   position: absolute;

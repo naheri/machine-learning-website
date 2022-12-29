@@ -1,0 +1,8 @@
+# ignorer les fichiers .env
+.env
+
+# celui du site :
+applications/.env
+
+# ignorer les fichiers DS_Store
+.DS_Store

@@ -1,7 +1,7 @@
 from flask import Flask,render_template,request,Response, jsonify
-
 from gtts import *
 import openai
+from dotenv import load_dotenv
 import numpy as np
 import tensorflow as tf
 from tensorflow.keras.models import load_model
@@ -16,13 +16,12 @@ env = Environment(
     autoescape=select_autoescape()
 )
 env.globals.update(zip=zip)
+load_dotenv()
 
-
-
+auth_key = os.getenv("auth_key")
 app = Flask(__name__)
-openai.api_key="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"
-auth_key = "6e8476c9-3cc9-ecd1-c74e-a026e0093e49:fx"  # Replace with your key
 translator = deepl.Translator(auth_key)
+openai.api_key = os.getenv("OPENAI_API_KEY")
 loop_running = False
 
 
