@@ -67,7 +67,7 @@
     <div class="try">
       <form action="/get_gender_start" method="post">
         <p>Faites "deviner" à un algorithme de détection de genre votre sexe :</p>
-        <input type="submit" value="Ouvrir la caméra/commencer" class="button">
+        <input type="submit" value="Ouvrir la caméra/commencer" onclick="alertBox()" class="button">
       </form>
       <form action="/get_gender_stop" method="post">
         <input type="submit" value="stop/fermer caméra" class="stop-btn">
@@ -270,6 +270,10 @@ const navLinks = document.querySelector(".nav-links")
 function plantedSound(){
 	var snd = new Audio("../static/sounds/TOONTwang_Plantedcartoon.mp3")
 	snd.play()
+}
+// affiche une alerte sous quand on clique sur le bouton
+function alertBox() {
+  alert("Votre webcam est en train de s'allumer', veuillez patienter...");
 }
 </script>
 </body>

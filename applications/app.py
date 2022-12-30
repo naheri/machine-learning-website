@@ -8,6 +8,7 @@ from tensorflow.keras.models import load_model
 import deepl
 import cv2
 import os
+import easygui
 
 # rendre zip utilisable dans le template
 from jinja2 import Environment,PackageLoader,select_autoescape
@@ -124,7 +125,7 @@ def get_sentiment():
   return render_template("response.html", texte_sentiment=message)
 
 @app.route("/get_gender_start", methods=["POST"])
-def get_gender():
+def get_gender(): 
   global loop_running
   global gender
   loop_running = True
