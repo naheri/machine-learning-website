@@ -7,3 +7,4 @@ deepl
 gTTS
 python==3.9.15
 openai
+python-dotenv

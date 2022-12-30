@@ -25,7 +25,7 @@ function changeSlide(){
   }
   slides[index].style.display= "block";
   index++;
-  setTimeout(changeSlide,2000);
+  setTimeout(changeSlide,2000); // 2 secondes
   
 }
 

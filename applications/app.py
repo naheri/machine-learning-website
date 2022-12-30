@@ -8,7 +8,6 @@ from tensorflow.keras.models import load_model
 import deepl
 import cv2
 import os
-import easygui
 
 # rendre zip utilisable dans le template
 from jinja2 import Environment,PackageLoader,select_autoescape
