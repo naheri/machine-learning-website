@@ -66,3 +66,9 @@ Running on http://127.0.0.1:5000
 ## Remarque
 
 Il y a un mode sombre qui dépend des paramètres de l'utilisateur.
+
+## Preview
+![alt text](/preview/preview1.png)
+![alt text](/preview/preview2.png)
+![alt text](/preview/preview3.png)
+![alt text](/preview/preview4.png)
