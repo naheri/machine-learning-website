@@ -32,7 +32,7 @@ projet20212363
 │  │  └─ video_feed.html                         
 │  ├─ app.py                                     
 │  ├─ detect_face.xml                            
-│  └─ model.h5                                   
+│  └─ gender_detection.model                     
 ├─ contact                                       
 │  ├─ form                                       
 │  │  ├─ listes                                  
@@ -146,6 +146,11 @@ projet20212363
 │  ├─ screen2ChatGPT.png                         
 │  ├─ screen3ChatGPT.png                         
 │  └─ wave-haikei.svg                            
+├─ preview                                       
+│  ├─ preview1.png                               
+│  ├─ preview2.png                               
+│  ├─ preview3.png                               
+│  └─ preview4.png                               
 ├─ sounds                                        
 │  ├─ TOONTwang_Plantedcartoon.mp3               
 │  ├─ Tongue-clicking-sound.mp3                  
@@ -157,4 +162,5 @@ projet20212363
 │  ├─ start.js                                   
 │  └─ style.css                                  
 ├─ README.md                                     
+├─ file_tree.txt                                 
 └─ requirements.txt                              
