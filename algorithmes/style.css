@@ -315,14 +315,7 @@ h3{
 	float: left;
     width: fit-content;
 }
-#classification-gif{
-	width: 35%;
-    height: 40%;
-    float: right;
-    transform: translateY(67%);
-    margin: 20px;
-    border-radius: 25px;
-}
+
 #algorithme-image{
   height: 19rem;
   width: 20rem;
@@ -426,13 +419,6 @@ li.algorithm-list-bullet {
 #footerwrappertext{
 	font-weight: 700;
 	transform: translateY(-2vw);
-}
-#semisupervised-video{
-	border-radius: 25px;
-    height: 30%;
-    float: right;
-    transform: translateY(14rem);
-    width: 30%;
 }
 button{
 	background: transparent;
